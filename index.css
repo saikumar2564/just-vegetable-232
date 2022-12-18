@@ -181,6 +181,7 @@ button:hover{
    grid-template-columns: repeat(6,1fr);
    margin: auto;
    gap: 20px;
+   justify-content: space-around;
 }
 #mid >.pimage{
     height: 80px;
@@ -312,7 +313,78 @@ hr{
     padding: 15px;
     border-radius: 4px;
   }
-  
   #myBtn:hover {
     background-color: #555;
   }
+  .popup_form,.popup_form1{
+    position: absolute;
+    width: 600px;
+    top: 50%;
+    left: -50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* opacity: 1; */
+    height: 450px;
+    border-radius: 20px;
+  }
+  .showpopup{
+    left: 50%;
+    z-index: 2;
+  }
+  #left,#left1{
+    width: 50%;
+  }
+  #left img,#left1 img{
+    width: 100%;
+  }
+  #maindiv,#maindiv1{
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+  }
+  #right input,#right1 input{
+    width: 200px;
+    border: none;
+    border-bottom: 2px solid black;
+    height: 20px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 200px;
+  }
+  #right input:hover,#right1 input:hover {
+    cursor: pointer;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+
+#btnpop,#btnpop1{
+    display: block;
+    margin: auto;
+    /* margin-left: 200px; */
+    text-align: center;
+    width: 200px;
+    font-size: 20px;
+    border: 1px solid; 
+}
+#right h2{
+    width: 250px;
+}
+#close1,#close{
+   display: flex;
+   flex-direction: row-reverse;
+}
+#close1 button,#close button{
+    width:30px;
+    border: none;
+} 
+/* #ptag{
+    margin-bottom: 10px
+} */
+#mid{
+    margin-top: 20px;
+}
+
+
+

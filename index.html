@@ -25,7 +25,7 @@
             <div  class="sub-nav">
             <div class="ci" id="cart" title="my cart"><img src="https://img.icons8.com/material-outlined/512/shopping-cart.png" alt=""> </div>
             <p class="cart">cart</p>
-            <button id="login">LOGIN/SIGNUP</button></div>
+            <button onclick="showmodel()" id="login">LOGIN/SIGNUP</button></div>
         </nav>
     </div>
      <div id="banner">
@@ -285,36 +285,33 @@
         <img id="msg" title="Please login to access chat support" src="https://www.shutterstock.com/image-vector/chat-vector-flat-icon-floating-260nw-2192257377.jpg" alt="">
     </div>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-</body>
-<script>
-    let image=document.getElementById("banner1");
-       let arr=["https://s.rmjo.in/Fitness-offer-banner-for-Web--2.jpg","https://s.rmjo.in/AC-Offer-Banner-Web-.jpg","https://s.rmjo.in/Paytm-Bank-Desktop-banner-%20(1).jpg","https://s.rmjo.in/WP-Web.png"]
-    var index=1;
-    function slide(){
-        image.setAttribute("src",arr[index]);
-        index++;
-        if(index>=arr.length){
-            index=0;
-        }
-    }
-    setInterval("slide()",2000)
-    let mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
+ <div class="popup_form">
+     <div id="close"><button onclick="closemodel()" >X</button></div>
+     <div id="maindiv">
+       <div id="left">
+        <img src="https://i.pinimg.com/originals/00/78/fc/0078fc8e0dcd6352cdf16f33e197a56a.gif" alt="">
+       </div>
+        <div id="right">
+         <h2> enter your mobile number</h2>
+         <div><input type="text" id="input"></div>
+         <button id="btnpop" onclick="continue1()">continue</button>
+        </div>
+     </div>     
+ </div>
+ <div class="popup_form1">
+  <div id="close1"><button onclick="closemodel()" >X</button></div>
+     <div id="maindiv1">
+       <div id="left1">
+        <img src="https://i.pinimg.com/originals/00/78/fc/0078fc8e0dcd6352cdf16f33e197a56a.gif" alt="">
+       </div>
+        <div id="right1">
+         <h2> please enter otp</h2>
+         <div><input type="text" id="input1"></div>
+         <button id="btnpop1">continue</button>
+        </div>
+     </div>     
+ </div>
+      
+  </body>
+<script src="index.js"></script>
 </html>
