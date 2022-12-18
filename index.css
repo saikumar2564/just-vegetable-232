@@ -316,7 +316,7 @@ hr{
   #myBtn:hover {
     background-color: #555;
   }
-  .popup_form,.popup_form1{
+  .popup_form,.popup_form1,.popup_form2{
     position: absolute;
     width: 600px;
     top: 50%;
@@ -333,18 +333,18 @@ hr{
     left: 50%;
     z-index: 2;
   }
-  #left,#left1{
+  #left,#left1,#left2{
     width: 50%;
   }
-  #left img,#left1 img{
+  #left img,#left1 img,#left2 img{
     width: 100%;
   }
-  #maindiv,#maindiv1{
+  #maindiv,#maindiv1,#maindiv2{
     display: flex;
     margin: auto;
     justify-content: space-evenly;
   }
-  #right input,#right1 input{
+  #right input,#right1 input #right input{
     width: 200px;
     border: none;
     border-bottom: 2px solid black;
@@ -353,13 +353,13 @@ hr{
     margin: auto;
     margin-bottom: 200px;
   }
-  #right input:hover,#right1 input:hover {
+  #right input:hover,#right1 input:hover,#right2 input:hover {
     cursor: pointer;
     border: none;
     border-bottom: 2px solid black;
   }
 
-#btnpop,#btnpop1{
+#btnpop,#btnpop1,#btnpop2{
     display: block;
     margin: auto;
     /* margin-left: 200px; */
@@ -375,7 +375,7 @@ hr{
    display: flex;
    flex-direction: row-reverse;
 }
-#close1 button,#close button{
+#close1 button,#close button,#close2 button{
     width:30px;
     border: none;
 } 
@@ -384,6 +384,15 @@ hr{
 } */
 #mid{
     margin-top: 20px;
+}
+.popup_form2 p{
+    width: 200px;
+    margin-bottom: 100px;
+}
+#right1 input{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
 }
 
 

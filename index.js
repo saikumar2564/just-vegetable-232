@@ -33,13 +33,44 @@ function showmodel(){
 function closemodel(){
       document.querySelector(".popup_form").classList.remove("showpopup")
       document.querySelector(".popup_form1").classList.remove("showpopup")
+      document.querySelector(".popup_form2").classList.remove("showpopup")
 }
 function continue1(){
+    if(input.value.length===10){
     closemodel()
     document.querySelector(".popup_form1").classList.add("showpopup")
+    }
+    else{
+        alert("plese enter a valid number")
+    }
 }
+// function continue2(){
+//     console.log("hi")
+//     closemodel()
+//     document.querySelector(".popup_form2").classList.add("showpopup")
+// }
 let input=document.getElementById('input')
 let btn=document.getElementById('btnpop')
+let input1=document.getElementById('input1')
+let btn1=document.getElementById('btnpop1')
+let mainname=document.getElementById("login")
+let inputname=document.getElementById("inputname")
+function continue2(){
+    if(input1.value==1234 &&input1.value.length==4){
+      console.log(input1)
+      closemodel()
+      document.querySelector(".popup_form2").classList.add("showpopup")
+      alert("hi")
+    }
+    else{
+        alert("enter correct otp")
+    }
+}
+function continue3(){
+    alert("signup successful")
+    mainname.innerText=inputname.value
+    closemodel()
+}
 let val= JSON.parse(localStorage.getItem('number'))||[]
 btn.addEventListener("click",(e)=>{
     let val= JSON.parse(localStorage.getItem('number'))||[]
@@ -52,6 +83,7 @@ btn.addEventListener("click",(e)=>{
             alert(" invalid NUmber")
         }    
     }else{
+        let count=0
         let temp=false
         if(input.value.length===10){
             for(let i=0;i<val.length;i++){
@@ -68,6 +100,7 @@ btn.addEventListener("click",(e)=>{
             }
             if(temp===false){
                 alert('Alrealy Exist Number')
+              count++;
             }
         }
         else{
