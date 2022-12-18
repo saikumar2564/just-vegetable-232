@@ -60,7 +60,7 @@ function continue2(){
       console.log(input1)
       closemodel()
       document.querySelector(".popup_form2").classList.add("showpopup")
-      alert("hi")
+      alert("otp verification successful")
     }
     else{
         alert("enter correct otp")
