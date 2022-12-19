@@ -63,7 +63,7 @@ function continue2(){
       alert("otp verification successful")
     }
     else{
-        alert("enter correct otp")
+        alert("Enter correct otp")
     }
 }
 function continue3(){

@@ -344,7 +344,7 @@ hr{
     margin: auto;
     justify-content: space-evenly;
   }
-  #right input,#right1 input #right input{
+  #right input,#right1 input, #right input{
     width: 200px;
     border: none;
     border-bottom: 2px solid black;
@@ -395,6 +395,14 @@ hr{
 #input1{
     margin-bottom: 200px;
 }
+.popup_form,.popup_form1,.popup_form2{
+    overflow:hidden;
+  position: fixed;
+  top: 50%;
+  background-color: aliceblue;
+  /* width: 100%; */
+}
+
 
 
 
